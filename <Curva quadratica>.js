@@ -25,4 +25,6 @@
             }
     </script>            
     </head>
+<body onload="draw();"> <canvas id="meuCanvas" width="1350" height="1350" style="border:1px solid #000000;"></canvas> </body> </html>
+
     
