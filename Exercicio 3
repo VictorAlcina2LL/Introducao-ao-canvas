@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+<title>Exercício da aula 3 - Estrelas Multiplas</title> 
+<meta charset="UTF-8"> <!-- Início do Java Script --> 
+<script> function draw(){ var canvas = document.getElementById('meuCanvas'); 
+    var cornerRadius = 5; if (canvas.getContext){ var cntxt = canvas.getContext('2d'); 
+    cntxt.moveTo(185, 142); 
+   cntxt.lineTo(234, 182); 
+  cntxt.lineTo(228, 136); cntxt.lineTo(134, 332); 
+  cntxt.lineTo(289, 192); cntxt.lineTo(236, 249); 
+ cntxt.lineTo(395, 360); cntxt.lineTo(253, 239); 
+cntxt.lineTo(449, 143); cntxt.lineTo(275, 189); 
+cntxt.closePath(); cntxt.stroke(); } } 
+</script> <!-- Fim do Java Script --> 
+</head> 
+<body onload="draw();"> <canvas id="meuCanvas" width="1350" height="1350" style="border:1px solid #000000;"></canvas> </body> </html>
