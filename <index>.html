@@ -1,16 +1,26 @@
-<index>
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-     <title>introdução ao Canvas</title>
-     <link rel="stylesheet" href="styles.css">
-     <link href="https://fonts.googleleapis.com/css?family=Roboto|Sirin+Stencil" rel="stylesheet">
-     <meta charset="UTF-8">
-     <link rel="icon" href="Images/Icon1/favicon.ico" type="image/x-icon"?v=2 />
-     <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-    </head>
-    <body>
-        <canvas id="meuCanvas" widht="200" height="100" style=border:1px solid #000000;"></canvas"
-        </body>
-        </html>       
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Introdução ao canva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Sirin+Stencil" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="icon" href="meudiretorio" type="image/x-icon"?v=2 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type"text/javascript">
+    funcition draw(){
+        var canvas= document.getElementById('meuCanvas');
+        if (canvas.getContext){
+            var cntxt = canvas.getContext('2d');
+            /*** Imagem ***/
+            var imagem = document.getElementById("O_Lima");
+            cntxt.draw(imagem, (canvas.width - image.width)/2, (canvas.height - imagem.width/2, imagem.height/2);
+        }
+    }
+</script>
+</head>
+<body onload="draw();">
+    <img src="imagens/meudiretorio" id="O_Lima" style="display:none;">
+    <canvas id="meuCanvas" width="1034" height="778" style="border:1px solid #000000;"></canvas>
+    </body>
+    </html>
